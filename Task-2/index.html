@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lalezar&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #F2EAD3;">
+    <div class="container mt-5 justify-content-center">
+        <div class="row boxShadow border">
+            <div class="col-6 border p-4 ps-5" style="background-color: #F2EAD3;">
+                <form action="./php/connection.php" method="post" class="w-75">
+                    <h1 style="color: #3F2305;"> Welcome Back! </h1>
+                    <h4 style="max-width: 80%; color: #554827;"> Good to see you again! sign in to continue.</h4>
+                    <hr>
+                    <div class="row mt-4 form-group">
+                        <label for="email" style="font-size: 20px; color: #3F2305;"> <b> Email: </b> </label>
+                        <input class="form-control ms-2 mb-3" type="text" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="password" style="font-size: 20px; color: #3F2305;"> <b> Password: </b> </label>
+                        <input type="password" class="form-control ms-2" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <br>
+                    <div class="g-recaptcha" data-sitekey="6LfpwpYnAAAAALwO7uQ8-1QtElZN9r7W6OpEB7yu"></div>
+                    
+                    <div class="mt-4 text-center d-flex justify-content-left">
+                        <button type="submit" name="login" class="btn mr-auto w-25" id="login"> <b> Sign In </b> </button>
+                        <button type="reset" class="btn w-25 ms-5" style="border:1px solid #3F2305;" id="reset"> <b> Reset </b> </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-6 ps-5 border" style="background-color: white;">
+                <img src="IMAGES/Untitled design.gif" alt="" width="450px" height="550px" class="ps-5">
+            </div>
+        </div>
+    </div>
+    
+    <script src="SCRIPTS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.boxShadow{
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+}
+
+.border{
+    border-radius: 15px;
+}
+
+body{
+    font-family: Arvo;
+}
+
+#reset{
+    color: #3F2305;
+}
+
+#reset:hover{
+    background-color: #3F2305;
+    transition: 0.5s;
+    color: white;
+}
+
+#login{
+    background-color: #3F2305;
+    color: #F2EAD3;
+}
+
+#login:hover{
+    background-color: #F2EAD3;
+    border: 1px solid #3F2305;
+    transition: 0.5s;
+    color: #3F2305;
+}
